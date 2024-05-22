@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    /* background-color: rgb(40, 40, 40); */
+    background: linear-gradient(135deg, blue, aqua);
+    background-color: rgb(40, 40, 40);
+    color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.hero {
+    padding: 10px 20px;
+}
+.hero__content {
+}
+.hero__title {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.hero__title span {
+    background: linear-gradient(135deg, aqua, rgb(0, 183, 255), aqua, rgb(0, 183, 255), aqua);
+    background-clip: text;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px 30px blue;
+}
+.hero__info {
+    margin-top: 60px;
+}
+.hero__subtitle {
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(135deg, aqua, rgb(0, 183, 255), aqua, rgb(0, 183, 255), aqua);
+    background-clip: text;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px 30px blue;
+}
+.hero__nav {
+    margin-top: 20px;
+}
+.hero__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.hero__item {
+    border-radius: 10px;
+    position: relative;
+    background-image: url(../img/gon\ and\ killua.png);
+    background-color: rgb(100, 100, 100);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    flex: 0 1 calc((100% - 40px) / 3);
+    height: 160px;
+    padding: 15px;
+    transition: scale 0.1s;
+}
+.hero__item:hover {
+    scale: 1.01;
+}
+
+.hero__item-buttons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex; column-gap: 10px;
+}
+
+.hero__item-button {
+    color: white;
+    font-size: 20px;
+}
+.hero__link {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+.hero__item-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+.hero__item-text {
+    font-size: 15px;
+}
+
+@media (max-width: 900px) {
+    .hero__item {
+        height: 140px;
+    }
+
+    .hero__item-title {
+        font-size: 23px
+    }
+
+    .hero__item-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 780px) {
+    .hero__title {
+        font-size: 27px;
+    }
+    .hero__item {
+        flex: 0 1 calc((100% - 20px) / 2);
+    }
+}
+
+@media (max-width: 570px) {
+    .hero__title {
+        font-size: 23px;
+    }
+    .hero__subtitle {
+        font-size: 20px;
+    }
+
+    .hero__info {
+        margin-top: 30px;
+    }
+    .hero__item {
+        height: 120px;
+        /* flex: 0 1 100%; */
+    }
+
+    .hero__item-title {
+        font-size: 21px;
+    }
+
+    .hero__item-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    /* .hero {
+        padding: 5px 10px;
+    } */
+
+    .hero__title {
+        font-size: 17px;
+    }
+    
+    .hero__subtitle {
+        font-size: 16px;
+    }
+
+    .hero__item {
+        flex: 0 1 100%;
+        height: 150px;
+    }
+}
